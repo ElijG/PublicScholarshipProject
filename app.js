@@ -54,4 +54,25 @@ function renderFeed() {
     </article>
   `).join("");
 }
+function handleGuess(postId) {
+  if (guessed) return;
+  guessed = true;
  
+  const post = currentRound.find(p => p.id === postId);
+  const isCorrect = post.isFake; 
+  currentRound.forEach(p => {
+  const btn = document.querySelector(`[data-post="${p.id}"]`);
+ 		if (!btn) return;
+  	btn.disabled = true;
+      if (p.id === postId) {
+        	btn.classList.add(isCorrect ? "correct" : "wrong");
+        	btn.textContent = isCorrect ? "✓ Correct — this is fake" : "✗ Wrong — this is real";
+      } else if (p.isFake) {
+
+				     btn.classList.add("correct");
+      btn.textContent = "← This was the fake one";
+      btn.disabled = false; // makes it so that it can keep it readable//
+      btn.style.opacity = "1";
+      btn.style.cursor = "default";
+    }
+  });
