@@ -4,7 +4,7 @@
 const ROUNDS = [
 
 
-  /* ── ROUND 1 ─────────────────────────────────── */
+  
   [
     {
       id:       "r1p1",
@@ -32,7 +32,7 @@ const ROUNDS = [
     },
     {
       id:       "r1p3",
-      username: "NASA",        /* <-- '4' instead of 'a' */
+      username: "NASA",       
       avatar:   "👍",
       location: "The capital",
       img:      "👍",
@@ -69,4 +69,4 @@ const ROUNDS = [
   
   ]
 
-]; /* end ROUNDS */
+]; //can maybe try to add in other roads using r2 and r3
