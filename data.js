@@ -66,11 +66,7 @@ const ROUNDS = [
       fake:     false,
       clue:     ""
     }
-  ],
-
-
   
-  ]
 
 
 ]; /* end ROUNDS */
