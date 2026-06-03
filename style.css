@@ -31,7 +31,7 @@ body {
 }
 
 
-/* ── 2. LAYOUT ─────────────────────────────────── */
+/*2. LAYOUT */
 
 .feed {
   max-width: var(--max-width);
@@ -57,7 +57,7 @@ body {
 }
 
 
-/* ── 3. TOP NAV ────────────────────────────────── */
+/* 3. TOP NAV */
 
 .top-nav {
   position: fixed;
@@ -82,7 +82,7 @@ body {
 }
 
 
-/* ── 4. POST CARDS ─────────────────────────────── */
+/* 4. POST CARDS  */
 
 .post {
   border-bottom: 1px solid var(--border);
@@ -199,7 +199,7 @@ body {
 }
 
 
-/* ── 5. GUESS BUTTON ───────────────────────────── */
+/* 5. GUESS BUTTON  */
 
 .guess-wrap {
   padding: 10px 14px 18px;
@@ -246,7 +246,7 @@ body {
 }
 
 
-/* ── 6. RESULT POPUP ───────────────────────────── */
+/* 6. RESULT POPUP  */
 
 .result-screen {
   min-height: 100vh;
