@@ -67,6 +67,6 @@ const ROUNDS = [
       clue:     ""
     }
   
-
+  ]
 
 ]; /* end ROUNDS */
