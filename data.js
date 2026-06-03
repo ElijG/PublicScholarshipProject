@@ -1,25 +1,4 @@
-/* ================================================
-   DATA.JS — All post content lives here.
 
-   To add a new round:
-     1. Copy an existing [...] block below
-     2. Paste it as a new entry in ROUNDS
-     3. Set  fake: true  on exactly ONE post
-     4. Write a clear fakeClue explaining why
-
-   Post fields:
-     id       — unique string, no spaces
-     username — shown in the post header
-     avatar   — emoji shown as the profile picture
-     location — small text under the username (optional)
-     img      — emoji shown as the post image
-               (swap for an image path once you have photos)
-     likes    — number shown as the like count
-     caption  — the post body text
-     time     — e.g. "3 hours ago"
-     fake     — true = this is the fake post
-     clue     — explanation shown after the user guesses
-   ================================================ */
 
 
 const ROUNDS = [
