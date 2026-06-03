@@ -1,16 +1,4 @@
-/* ================================================
-   SPOTTHEFAKE — STYLESHEET
-   Sections:
-     1. Reset & Variables
-     2. Layout
-     3. Top Nav
-     4. Post Cards
-     5. Guess Button
-     6. Result Popup
-   ================================================ */
 
-
-/* ── 1. RESET & VARIABLES ──────────────────────── */
 
 *, *::before, *::after {
   box-sizing: border-box;
