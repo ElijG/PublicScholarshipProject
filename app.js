@@ -76,3 +76,50 @@ function handleGuess(postId) {
       btn.style.cursor = "default";
     }
   });
+setTimeout(() => showResult(post, isCorrect), 700);
+}  //delay until it shows guess answqer
+
+function showResult(guessedPost, isCorrect) {
+  const screen = document.getElementById("result-screen");
+  const icon   = document.getElementById("result-icon");
+  const title  = document.getElementById("result-title");
+  const body   = document.getElementById("result-body");
+ 
+  const fakePost = currentRound.find(p => p.isFake);
+ 
+  if (isCorrect) {
+    icon.textContent  = "🎉";
+    title.textContent = "Got it!";
+    body.textContent  = fakePost.fakeClue;
+  } else {
+    icon.textContent  = "😬";
+    title.textContent = "Not quite.";
+    body.textContent  = `The fake post was by @${fakePost.username}. ${fakePost.fakeClue}`;
+  }
+ 
+  screen.classList.remove("hidden");
+}
+
+
+function resetGame() {
+  guessed = false;
+  document.getElementById("result-screen").classList.add("hidden");
+  pickRound();
+  renderFeed();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.addEventListener("click", e => {
+    const btn = e.target.closest(".guess-btn");
+    if (btn && !btn.disabled) {
+      handleGuess(btn.dataset.post);
+    }
+  });
+ 
+  document.getElementById("play-again").addEventListener("click", resetGame);
+ 
+  // Init//
+  pickRound();
+  renderFeed();
+});
+ 
