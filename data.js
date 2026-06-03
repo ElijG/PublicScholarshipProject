@@ -43,7 +43,7 @@ const ROUNDS = [
     likes: "1000 ",
     caption: "example",
     timestamp: "3 hours ago",
-    isFake: false,
+    isFake: true,
     fakeclue: "example",
   },
   {
