@@ -1,11 +1,27 @@
 let currentRound = [];
 let guessed = false;
-
+ 
+/* ─── HELPERS ────────────────────────────────────────────────── */
+function esc(str) {
+  const d = document.createElement("div");
+  d.appendChild(document.createTextNode(String(str)));
+  return d.innerHTML;
+}
+ 
 function fmtLikes(n) {
   if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + "M";
   if (n >= 1_000)     return (n / 1_000).toFixed(1) + "K";
   return n.toString();
 }
+ 
+/* ─── PICK A ROUND ───────────────────────────────────────────── */
+function pickRound() {
+  const idx = Math.floor(Math.random() * ROUNDS.length);
+  // Shuffle post order so fake isn't always in the same position
+  currentRound = [...ROUNDS[idx]].sort(() => Math.random() - 0.5);
+}
+ 
+/* ─── RENDER ─────────────────────────────────────────────────── */
 function renderFeed() {
   const feed = document.getElementById("feed");
   feed.innerHTML = currentRound.map(post => `
@@ -54,31 +70,40 @@ function renderFeed() {
     </article>
   `).join("");
 }
+ 
+/* ─── GUESS HANDLER ──────────────────────────────────────────── */
 function handleGuess(postId) {
   if (guessed) return;
   guessed = true;
  
   const post = currentRound.find(p => p.id === postId);
-  const isCorrect = post.isFake; 
+  const isCorrect = post.isFake;
+ 
+  // Disable all buttons and style them
   currentRound.forEach(p => {
-  const btn = document.querySelector(`[data-post="${p.id}"]`);
- 		if (!btn) return;
-  	btn.disabled = true;
-      if (p.id === postId) {
-        	btn.classList.add(isCorrect ? "correct" : "wrong");
-        	btn.textContent = isCorrect ? "✓ Correct — this is fake" : "✗ Wrong — this is real";
-      } else if (p.isFake) {
-
-				     btn.classList.add("correct");
+    const btn = document.querySelector(`[data-post="${p.id}"]`);
+    if (!btn) return;
+    btn.disabled = true;
+ 
+    if (p.id === postId) {
+      // The one the user tapped
+      btn.classList.add(isCorrect ? "correct" : "wrong");
+      btn.textContent = isCorrect ? "✓ Correct — this is fake" : "✗ Wrong — this is real";
+    } else if (p.isFake) {
+      // Reveal the actual fake post if user was wrong
+      btn.classList.add("correct");
       btn.textContent = "← This was the fake one";
-      btn.disabled = false; // makes it so that it can keep it readable//
+      btn.disabled = false; // keep it visible/readable
       btn.style.opacity = "1";
       btn.style.cursor = "default";
     }
   });
-setTimeout(() => showResult(post, isCorrect), 700);
-}  //delay until it shows guess answqer
-
+ 
+  // Show result modal after a short delay
+  setTimeout(() => showResult(post, isCorrect), 700);
+}
+ 
+/* ─── RESULT MODAL ───────────────────────────────────────────── */
 function showResult(guessedPost, isCorrect) {
   const screen = document.getElementById("result-screen");
   const icon   = document.getElementById("result-icon");
@@ -99,8 +124,8 @@ function showResult(guessedPost, isCorrect) {
  
   screen.classList.remove("hidden");
 }
-
-
+ 
+/* ─── PLAY AGAIN ─────────────────────────────────────────────── */
 function resetGame() {
   guessed = false;
   document.getElementById("result-screen").classList.add("hidden");
@@ -108,6 +133,8 @@ function resetGame() {
   renderFeed();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+ 
+/* ─── EVENTS ─────────────────────────────────────────────────── */
 document.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", e => {
     const btn = e.target.closest(".guess-btn");
@@ -118,8 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
  
   document.getElementById("play-again").addEventListener("click", resetGame);
  
-  // Init//
+  // Init
   pickRound();
   renderFeed();
 });
- 
