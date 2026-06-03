@@ -1,14 +1,7 @@
-/* ================================================
-   APP.JS — Game logic. You shouldn't need to
-   edit this file unless you want to change how
-   the game behaves (not the content).
-   ================================================ */
 
 
-/* ── STATE ─────────────────────────────────────── */
-
-let currentRound = [];   // the 5 posts currently shown
-let guessed = false;     // has the user tapped a button yet?
+let currentRound = [];  
+let guessed = false;     
 
 
 /* ── HELPERS ────────────────────────────────────── */
@@ -139,21 +132,24 @@ function showResult(isCorrect) {
     ? fakePost.clue
     : "The fake post was @" + fakePost.username + ". " + fakePost.clue;
 
+  // Hide the feed, show the result as a full page
+  document.getElementById("feed").classList.add("hidden");
+  document.querySelector(".banner").classList.add("hidden");
   document.getElementById("result-screen").classList.remove("hidden");
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
-
 
 /* ── RESET / PLAY AGAIN ─────────────────────────── */
 
 function resetGame() {
   guessed = false;
   document.getElementById("result-screen").classList.add("hidden");
+  document.getElementById("feed").classList.remove("hidden");
+  document.querySelector(".banner").classList.remove("hidden");
   pickRound();
   renderFeed();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
-
-
 /* ── INITIALISE ─────────────────────────────────── */
 
 document.addEventListener("DOMContentLoaded", () => {
