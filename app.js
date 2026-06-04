@@ -100,13 +100,13 @@ function handleGuess(postId) {
     
       btn.classList.add(isCorrect ? "correct" : "wrong");
       btn.textContent = isCorrect
-        ? "✓ Correct — this is fake"
-        : "✗ Wrong — this is real";
+        ? "Correct this is the fake post"
+        : "Wrong this is a real";
 
     } else if (post.fake) {
      
       btn.classList.add("correct");
-      btn.textContent = "← This was the fake one";
+      btn.textContent = "This was the fake one";
       btn.disabled = false;        // keep it readable
       btn.style.opacity = "1";
       btn.style.cursor = "default";
