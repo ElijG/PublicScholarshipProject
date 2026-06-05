@@ -7,17 +7,17 @@
 }
 
 :root {
-  --bg:        #000000;       /* page background       */
-  --bg-card:   #1a1a1a;       /* post image background */
-  --bg-raised: #262626;       /* button background     */
-  --border:    #2a2a2a;       /* divider lines         */
-  --text:      #f5f5f5;       /* primary text          */
-  --muted:     #888888;       /* secondary text        */
-  --green:     #4ade80;       /* correct answer color  */
-  --red:       #f87171;       /* wrong answer color    */
+  --bg:        #000000;       
+  --bg-card:   #1a1a1a;      
+  --bg-raised: #262626;      
+  --border:    #2a2a2a;       
+  --text:      #f5f5f5;      
+  --muted:     #888888;      
+  --green:     #4ade80;       
+  --red:       #f87171;      
   --gradient:  linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
 
-  --max-width: 480px;         /* feed column width     */
+  --max-width: 480px;        
   --nav-height: 52px;
   --font: 'Sora', -apple-system, sans-serif;
 }
