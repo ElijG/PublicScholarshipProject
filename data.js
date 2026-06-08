@@ -9,9 +9,9 @@ const ROUNDS = [
     {
       id:       "r1p1",
       username: "nasa",
-      avatar:   "image",
+      avatar:   "assets/images.JPEG",
       location: "example",
-      img:      "👍",
+      img:      "assets/images.JPEG",
       likes:    2481392,
       caption:  "example",
       time:     "example time",
