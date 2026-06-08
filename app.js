@@ -33,7 +33,12 @@ function renderFeed() {
 
       <!-- Header: avatar, username, location -->
       <div class="post-header">
-        <div class="avatar">${post.avatar}</div>
+        <div class="avatar">
+          ${post.avatar.startsWith("assets/")
+          ? `<img src="${post.avatar}" alt="avatar"/>`
+          : post.avatar
+          }
+        </div>
         <div>
           <p class="username">${post.username}</p>
           ${post.location ? `<p class="location">${post.location}</p>` : ""}
