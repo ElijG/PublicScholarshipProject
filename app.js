@@ -41,7 +41,12 @@ function renderFeed() {
       </div>
 
       <!-- Image area -->
-      <div class="post-img">${post.img}</div>
+      <div class="post-img">
+        ${post.img.startsWith("assets/")
+          ? `<img src="${post.img}" alt="post image"/>`
+          : post.img
+          }
+</div>
 
       <!-- Action icons (cosmetic only) -->
       <div class="post-actions">
