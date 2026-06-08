@@ -111,6 +111,13 @@ body {
   font-size: 18px;
   flex-shrink: 0;
 }
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* probably use object fit cover so that it crops to the small circle*/
+  border-radius: 50%;
+  display: block;
+}
 
 .username {
   font-size: 13.5px;
