@@ -9,7 +9,7 @@ const ROUNDS = [
     {
       id:       "r1p1",
       username: "nasa",
-      avatar:   "👍",
+      avatar:   "image",
       location: "example",
       img:      "👍",
       likes:    2481392,
