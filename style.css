@@ -145,7 +145,7 @@ body {
 .post-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /*use object-fit: cover; for cropping image to fit*/
+  object-fit: cover; /*use object-fit: contain; for not cropping image to fit*/
   display: block;
 }
 
