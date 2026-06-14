@@ -134,7 +134,7 @@ function showResult(isCorrect) {
   const fakePost = currentRound.find(p => p.fake);
 
   document.getElementById("r-icon").textContent  = isCorrect ? "Example other text" : "Example other text";
-  document.getElementById("r-title").textContent = isCorrect ? "Got it!" : "Not quite.";
+  document.getElementById("r-title").textContent = isCorrect ? "Correct" : "Incorrect";
   document.getElementById("r-body").textContent  = isCorrect
     ? fakePost.clue
     : "The fake post was @" + fakePost.username + ". " + fakePost.clue;
