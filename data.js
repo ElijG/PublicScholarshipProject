@@ -62,7 +62,7 @@ const ROUNDS = [
       img:      "editedjoerogan.jpg",
       likes:    89041,
       caption:  "This week we had some climate proffesionals on the podcast who shared information about the actual implications that humans are having on the world",
-      time:     "Example Time",
+      time:     "3 weeks ago",
       fake:     true,
       clue:     "a"
     }
