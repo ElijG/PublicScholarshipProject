@@ -57,9 +57,9 @@ const ROUNDS = [
     {
       id:       "r1p5",
       username: "Joe Rogan",
-      avatar:   "post5pfp.jpg",
+      avatar:   "assets/post5pfp.jpg",
       location: "Austin, Texas",
-      img:      "editedjoerogan.jpg",
+      img:      "assets/editedjoerogan.jpg",
       likes:    89041,
       caption:  "This week we had some climate proffesionals on the podcast who shared information about the actual implications that humans are having on the world",
       time:     "3 weeks ago",
