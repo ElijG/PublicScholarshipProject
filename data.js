@@ -47,7 +47,7 @@ const ROUNDS = [
       username: "Leonardo DiCaprio",
       avatar:   "assets/post4pfp.jpg",
       location: "Los Angelos, California",
-      img:      "assets/climatelpost.jpg",
+      img:      "assets/climatelpost4.jpg",
       likes:    487291,
       caption:  "Here is a article that shows the deep impact that climate change has",
       time:     "1 day ago",
