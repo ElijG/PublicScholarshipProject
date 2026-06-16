@@ -175,7 +175,7 @@ const ROUNDS = [
       time:     "Example Time",
       fake:     false,
       clue:     ""
-    }, {
+    }{
       id:       "r3p5",
       username: "Example",
       avatar:   "👍",
@@ -186,7 +186,7 @@ const ROUNDS = [
       time:     "Example Time",
       fake:     true,
       clue:     ""
-    },
+    }
 ]
 
 
