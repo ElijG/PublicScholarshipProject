@@ -11,7 +11,7 @@ const ROUNDS = [
       username: "Rachel blablabla",
       avatar:   "assets/post1pfp.jpg",
       location: "Arizona",
-      img:      "assets/climatelpost4.jpg",
+      img:      "assets/climatelpost1.jpg",
       likes:    500,
       caption:  "Sharing a climate change post showing the impacts that climate change has",
       time:     "14 hours ago",
