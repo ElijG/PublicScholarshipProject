@@ -126,7 +126,7 @@ const ROUNDS = [
       likes:    892041,
       caption:  "Exampple",
       time:     "Example Time",
-      fake:     false,
+      fake:     true,
       clue:     ""
     }
 ],
@@ -184,7 +184,7 @@ const ROUNDS = [
       likes:    892041,
       caption:  "Exampple",
       time:     "Example Time",
-      fake:     false,
+      fake:     true,
       clue:     ""
     },
 ]
