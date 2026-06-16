@@ -52,7 +52,7 @@ const ROUNDS = [
       caption:  "Example",
       time:     "Example time",
       fake:     false,
-      clue:     ""
+      clue:     "a"
     },
     {
       id:       "r1p5",
@@ -64,7 +64,7 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     false,
-      clue:     ""
+      clue:     "a"
     }
   
   ],
@@ -79,7 +79,7 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     false,
-      clue:     ""
+      clue:     "a"
     },
     {
       id:       "r2p2",
@@ -91,7 +91,7 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     false,
-      clue:     ""
+      clue:     "a"
     },
     {
       id:       "r2p3",
@@ -103,7 +103,7 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     false,
-      clue:     ""
+      clue:     "a"
     },
     {
       id:       "r2p4",
@@ -115,7 +115,7 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     false,
-      clue:     ""
+      clue:     "a"
     },
     {
       id:       "r2p5",
@@ -127,7 +127,7 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     true,
-      clue:     ""
+      clue:     "a"
     }
 ],
 [
@@ -141,7 +141,7 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     false,
-      clue:     ""
+      clue:     "a"
     }, {
       id:       "r3p2",
       username: "Example",
@@ -152,7 +152,7 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     false,
-      clue:     ""
+      clue:     "a"
     }, {
       id:       "r3p3",
       username: "Example",
@@ -163,7 +163,7 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     false,
-      clue:     ""
+      clue:     "a"
     }, {
       id:       "r3p4",
       username: "Example",
@@ -174,8 +174,8 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     false,
-      clue:     ""
-    }{
+      clue:     "a"
+    }, {
       id:       "r3p5",
       username: "Example",
       avatar:   "👍",
@@ -185,7 +185,7 @@ const ROUNDS = [
       caption:  "Exampple",
       time:     "Example Time",
       fake:     true,
-      clue:     ""
+      clue:     "a"
     }
 ]
 
