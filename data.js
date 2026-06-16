@@ -9,9 +9,9 @@ const ROUNDS = [
     {
       id:       "r1p1",
       username: "Rachel blablabla",
-      avatar:   "assets/post1pfp",
+      avatar:   "assets/post1pfp.jpeg",
       location: "Arizona",
-      img:      "assets/climatelpost4",
+      img:      "assets/climatelpost4.jpeg",
       likes:    500,
       caption:  "Sharing a climate change post showing the impacts that climate change has",
       time:     "14 hours ago",
@@ -21,9 +21,9 @@ const ROUNDS = [
     {
       id:       "r1p2",
       username: "Climate Central",
-      avatar:   "assets/post2pfp",
+      avatar:   "assets/post2pfp.jpeg",
       location: "Princeton, New Jersey",
-      img:      "assets/climatepost2",
+      img:      "assets/climatepost2.jpeg",
       likes:    204830,
       caption:  "Climate change is the cause of summer warming in most U.S. cities",
       time:     "1 week ago",
