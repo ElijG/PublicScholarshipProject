@@ -160,8 +160,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
  
-  document.getElementById("play-again").addEventListener("click", resetGame);
-
+  document.getElementById("next-btn").addEventListener("click", handleNext);
+document.getElementById("start-over-btn").addEventListener("click", resetGame);
  
   pickRound();
   renderFeed();
