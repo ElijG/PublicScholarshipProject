@@ -8,13 +8,13 @@ const ROUNDS = [
   [
     {
       id:       "r1p1",
-      username: "nasa",
-      avatar:   "assets/frog",
-      location: "example",
-      img:      "assets/frog",
-      likes:    2481392,
-      caption:  "example",
-      time:     "example time",
+      username: "Rachel blablabla",
+      avatar:   "assets/post1pfp",
+      location: "Arizona",
+      img:      "assets/climatelpost4",
+      likes:    500,
+      caption:  "Sharing a climate change post showing the impacts that climate change has",
+      time:     "14 hours ago",
       fake:     false,
       clue:     ""
     },
