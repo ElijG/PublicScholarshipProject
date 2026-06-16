@@ -147,26 +147,6 @@ function resetGame() {
   renderFeed();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
-
-
-document.addEventListener("DOMContentLoaded", () => {
-
- 
-  document.body.addEventListener("click", e => {
-    const btn = e.target.closest(".guess-btn");
-    if (btn && !btn.disabled) {
-      handleGuess(btn.dataset.id);
-    }
-  });
-
- 
-  document.getElementById("next-btn").addEventListener("click", handleNext);
-document.getElementById("start-over-btn").addEventListener("click", resetGame);
- 
-  pickRound();
-  renderFeed();
-
-});
 function showConclusion() {
   document.getElementById("result-screen").classList.add("hidden");
  
@@ -200,3 +180,28 @@ function handleNext() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 }
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+ 
+  document.body.addEventListener("click", e => {
+    const btn = e.target.closest(".guess-btn");
+    if (btn && !btn.disabled) {
+      handleGuess(btn.dataset.id);
+    }
+  });
+
+ 
+  document.getElementById("next-btn").addEventListener("click", handleNext);
+document.getElementById("start-over-btn").addEventListener("click", resetGame);
+ 
+  pickRound();
+  renderFeed();
+
+});
