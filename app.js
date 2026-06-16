@@ -166,3 +166,20 @@ document.addEventListener("DOMContentLoaded", () => {
   renderFeed();
 
 });
+function showConclusion() {
+  document.getElementById("result-screen").classList.add("hidden");
+ 
+  // Score message
+  const msgs = [
+    "Keep practicing — spotting fakes takes time!",
+    "Not bad — you caught some of them!",
+    "Good eye — you spotted most of them!",
+    "Perfect score — you're a fake-spotting expert!"
+  ];
+ 
+  document.getElementById("c-score").textContent  = `${score} / ${ROUNDS.length}`;
+  document.getElementById("c-message").textContent = msgs[score];
+ 
+  document.getElementById("conclusion-screen").classList.remove("hidden");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
