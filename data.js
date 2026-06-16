@@ -44,7 +44,7 @@ const ROUNDS = [
     },
     {
       id:       "r1p4",
-      username: "Leanardo DiCaprio",
+      username: "Leonardo DiCaprio",
       avatar:   "assets/post4pfp.jpg",
       location: "Los Angelos, California",
       img:      "assets/climatelpost.jpg",
