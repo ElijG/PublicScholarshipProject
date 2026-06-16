@@ -32,12 +32,12 @@ const ROUNDS = [
     },
     {
       id:       "r1p3",
-      username: "NASA",       
-      avatar:   "👍",
-      location: "The capital",
-      img:      "👍",
+      username: "Badlands Nat'L Park",       
+      avatar:   "assets/post3pfp.jpeg",
+      location: "South Dakota",
+      img:      "assets/climatepost3.jpeg",
       likes:    847,
-      caption:  "Example caption!",
+      caption:  "Carbon Dioxide emmisions impact everyone. Here are some facts about the impact that burning gasoline has",
       time:     "1 hour ago",
       fake:     true,                   
       clue:     "Example clue area"
