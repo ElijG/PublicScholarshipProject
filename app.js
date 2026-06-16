@@ -129,7 +129,8 @@ function showResult(isCorrect) {
     ? fakePost.clue
     : "The fake post was @" + fakePost.username + ". " + fakePost.clue;
   document.getElementById("r-round").textContent = `Round ${roundIndex + 1} of ${ROUNDS.length}`;
-   document.getElementById("next-btn").textContent = isLastRound ? "See Results" : "Next Round →";
+  const isLastRound = roundIndex === ROUNDS.length - 1;
+document.getElementById("next-btn").textContent = isLastRound ? "See Results" : "Next Round →";
   document.getElementById("feed").classList.add("hidden");
   document.querySelector(".banner").classList.add("hidden");
   document.getElementById("result-screen").classList.remove("hidden");
