@@ -132,6 +132,7 @@ function showConclusion() {
  
 function handleNext() {
   const isLastRound = roundIndex === ROUNDS.length - 1;
+
   if (isLastRound) {
     showConclusion();
   } else {
