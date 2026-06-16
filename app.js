@@ -2,7 +2,8 @@
 
 let currentRound = [];  
 let guessed = false;     
-
+let roundIndex = 0;    
+let score = 0;
 
 
 function formatLikes(n) {
