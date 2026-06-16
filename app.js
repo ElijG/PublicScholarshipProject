@@ -15,10 +15,6 @@ function formatLikes(n) {
 
 
 function pickRound() {
- 
-  const index = Math.floor(Math.random() * ROUNDS.length);
-
- 
   currentRound = [...ROUNDS[index]].sort(() => Math.random() - 0.5);
 }
 
@@ -31,13 +27,12 @@ function renderFeed() {
   feed.innerHTML = currentRound.map(post => `
 
     <article class="post">
-
-      <!-- Header: avatar, username, location -->
+ 
       <div class="post-header">
         <div class="avatar">
           ${post.avatar.startsWith("assets/")
-          ? `<img src="${post.avatar}" alt="avatar"/>`
-          : post.avatar
+            ? `<img src="${post.avatar}" alt="avatar"/>`
+            : post.avatar
           }
         </div>
         <div>
@@ -45,16 +40,16 @@ function renderFeed() {
           ${post.location ? `<p class="location">${post.location}</p>` : ""}
         </div>
       </div>
-
-      <!-- Image area -->
+ 
       <div class="post-img">
-        ${post.img.startsWith("assets/")
+        ${post.img.startsWith("assets/") && post.img.match(/\.(mp4|mov|webm)$/i)
+          ? `<video src="${post.img}" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;"></video>`
+          : post.img.startsWith("assets/")
           ? `<img src="${post.img}" alt="post image"/>`
           : post.img
-          }
-</div>
-
-      <!-- Action icons (cosmetic only) -->
+        }
+      </div>
+ 
       <div class="post-actions">
         <button class="action-icon" tabindex="-1" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -72,21 +67,18 @@ function renderFeed() {
           </svg>
         </button>
       </div>
-
-      <!-- Like count, caption, timestamp -->
+ 
       <p class="likes">${formatLikes(post.likes)} likes</p>
       <p class="caption"><strong>${post.username}</strong> ${post.caption}</p>
       <p class="timestamp">${post.time}</p>
-
-      <!-- The guess button -->
+ 
       <div class="guess-wrap">
         <button class="guess-btn" data-id="${post.id}">
           This post is fake
         </button>
       </div>
-
+ 
     </article>
-
   `).join("");
 }
 
@@ -94,31 +86,28 @@ function renderFeed() {
 
 
 function handleGuess(postId) {
-  if (guessed) return;   // ignore extra taps
+  if (guessed) return;
   guessed = true;
-
+ 
   const tapped = currentRound.find(p => p.id === postId);
   const isCorrect = tapped.fake;
-
-
+ 
+  if (isCorrect) score++;
+ 
   currentRound.forEach(post => {
     const btn = document.querySelector(`[data-id="${post.id}"]`);
     if (!btn) return;
-
     btn.disabled = true;
-
+ 
     if (post.id === postId) {
-    
       btn.classList.add(isCorrect ? "correct" : "wrong");
       btn.textContent = isCorrect
-        ? "Correct this is the fake post"
-        : "Wrong this is a real";
-
+        ? "Correct Guess"
+        : "Incorrect";
     } else if (post.fake) {
-     
       btn.classList.add("correct");
-      btn.textContent = "This was the fake one";
-      btn.disabled = false;        // keep it readable
+      btn.textContent = "← This was the fake one";
+      btn.disabled = false;
       btn.style.opacity = "1";
       btn.style.cursor = "default";
     }
@@ -139,8 +128,8 @@ function showResult(isCorrect) {
   document.getElementById("r-body").textContent  = isCorrect
     ? fakePost.clue
     : "The fake post was @" + fakePost.username + ". " + fakePost.clue;
-
-  // Hide the feed, show the result as a full page
+  document.getElementById("r-round").textContent = `Round ${roundIndex + 1} of ${ROUNDS.length}`;
+   document.getElementById("next-btn").textContent = isLastRound ? "See Results" : "Next Round →";
   document.getElementById("feed").classList.add("hidden");
   document.querySelector(".banner").classList.add("hidden");
   document.getElementById("result-screen").classList.remove("hidden");
