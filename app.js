@@ -169,12 +169,12 @@ document.addEventListener("DOMContentLoaded", () => {
 function showConclusion() {
   document.getElementById("result-screen").classList.add("hidden");
  
-  // Score message
+
   const msgs = [
-    "Keep practicing — spotting fakes takes time!",
-    "Not bad — you caught some of them!",
-    "Good eye — you spotted most of them!",
-    "Perfect score — you're a fake-spotting expert!"
+    "exampople",
+    "example123",
+    "example123",
+    "example123"
   ];
  
   document.getElementById("c-score").textContent  = `${score} / ${ROUNDS.length}`;
@@ -182,4 +182,20 @@ function showConclusion() {
  
   document.getElementById("conclusion-screen").classList.remove("hidden");
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+function handleNext() {
+  const isLastRound = roundIndex === ROUNDS.length - 1;
+ 
+  if (isLastRound) {
+    showConclusion();
+  } else {
+    roundIndex++;
+    guessed = false;
+    document.getElementById("result-screen").classList.add("hidden");
+    document.getElementById("feed").classList.remove("hidden");
+    document.querySelector(".banner").classList.remove("hidden");
+    pickRound();
+    renderFeed();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 }
