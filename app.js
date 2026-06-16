@@ -15,7 +15,7 @@ function formatLikes(n) {
 
 
 function pickRound() {
-  currentRound = [...ROUNDS[index]].sort(() => Math.random() - 0.5);
+  currentRound = [...ROUNDS[roundIndex]].sort(() => Math.random() - 0.5);
 }
 
 
