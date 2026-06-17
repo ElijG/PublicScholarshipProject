@@ -71,63 +71,51 @@ const ROUNDS = [
   [
     {
       id:       "r2p1",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
+      username: "Nature",
+      avatar:   "assets/climate2pfp1.jpg",
+      location: "New Jersey",
+      img:      "assets/climate2post1.jpg",
       likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
+      caption:  "In a 2021 survey it shows that youth in many countries are worried about climate change",
+      time:     "3 years ago",
       fake:     false,
-      clue:     "a"
+      clue:     "Nice try"
     },
     {
       id:       "r2p2",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
+      username: "InsideClimate News",
+      avatar:   "assets/climate2pfp2.jpg",
+      location: "Washington",
+      img:      "assets/climate2post2.jpg",
+      likes:    30021,
+      caption:  "Here is somne information on climate change's economic impact",
+      time:     "6 years ago",
       fake:     false,
-      clue:     "a"
+      clue:     "Nice try"
     },
     {
       id:       "r2p3",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
+      username: "EdWeek Research Center",
+      avatar:   "assets/climate2pfp3.jpg",
+      location: "Close by",
+      img:      "assets/climate2post3.jpg",
+      likes:    8017,
+      caption:  "A recent survey shows where 14-18 year olds mainly get their information on climate change from",
+      time:     "4 years ago",
       fake:     false,
-      clue:     "a"
+      clue:     "Nice try"
     },
     {
       id:       "r2p4",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
-      fake:     false,
-      clue:     "a"
-    },
-    {
-      id:       "r2p5",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
+      username: "NASA.gov",
+      avatar:   "assets/climate2pfp4.j[g",
+      location: "Canada",
+      img:      "assets/climate2post4.jpg",
+      likes:    4239,
+      caption:  "A recent survey from one of our partner facilities in Canda shows that the Global Temparature is rising all over the world. Our data confirms the main driver is increased solar activity, not CO2 emissions which is clearly shown in the graph.",
       time:     "Example Time",
       fake:     true,
-      clue:     "a"
+      clue:     "Good job the official NASA account on instagram is @nasa not NASA.gov. The caption also misinterprated the graph."
     }
 ],
 [
