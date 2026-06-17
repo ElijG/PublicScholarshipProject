@@ -4,69 +4,58 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Instagram Guessing Game</title>
-
-
   <link rel="stylesheet" href="style.css"/>
-
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-
 
   <nav class="top-nav">
     <span class="nav-logo">Instagram Guessing Game</span>
   </nav>
 
-
   <div class="banner">
     One of these climate change related posts is fake. Scroll down and take a guess by clicking on the "this post is fake" button.
   </div>
 
-
   <main class="feed" id="feed"></main>
 
- 
   <div class="result-screen hidden" id="result-screen">
     <div class="result-box">
       <p class="round-counter" id="r-round"></p>
       <div class="result-icon" id="r-icon"></div>
       <h2 id="r-title"></h2>
       <p id="r-body"></p>
-      <button class="play-again" id="next-btn">Next Round →</button>
+      <div class="result-info" id="result-info">
+        Edit this text to add educational information about what to look out for in this round.
+      </div>
+      <button class="play-again" id="next-btn">Next Round</button>
     </div>
   </div>
 
-
   <div class="conclusion-screen hidden" id="conclusion-screen">
     <div class="conclusion-box">
- 
       <h2 class="c-heading">Your Results</h2>
       <div class="c-score" id="c-score"></div>
       <p class="c-message" id="c-message"></p>
-
       <div class="c-info">
-        <h3>example</h3>
+        <h3>How to spot climate misinformation</h3>
         <ul>
-          <li>example</li>
-          <li>example</li>
-          <li>example</li>
+          <li>I hope that this game makes you think more about the imapct that different sources can have on misinformation.</li>
+          <li>Make sure to always double check information thorough search engines </li>
+          <li>Also even though large figures can post information on topics, they are not always correct.</li>
           <li>example</li>
           <li>example</li>
         </ul>
       </div>
-  
- 
       <button class="play-again" id="start-over-btn">Start Over</button>
     </div>
   </div>
- 
 
   <script src="data.js"></script>
   <script src="app.js"></script>
- 
+
 </body>
 </html>
  
