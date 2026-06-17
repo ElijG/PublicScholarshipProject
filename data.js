@@ -52,7 +52,7 @@ const ROUNDS = [
       caption:  "Here is a article that shows the deep impact that climate change has",
       time:     "1 day ago",
       fake:     false,
-      clue:     "a"
+      clue:     "Leonardo DiCaprio shared information from a public survey that is true information."
     },
     {
       id:       "r1p5",
