@@ -129,64 +129,7 @@ const ROUNDS = [
       fake:     true,
       clue:     "a"
     }
-],
-[
-   {
-      id:       "r3p1",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
-      fake:     false,
-      clue:     "a"
-    }, {
-      id:       "r3p2",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
-      fake:     false,
-      clue:     "a"
-    }, {
-      id:       "r3p3",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
-      fake:     false,
-      clue:     "a"
-    }, {
-      id:       "r3p4",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
-      fake:     false,
-      clue:     "a"
-    }, {
-      id:       "r3p5",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
-      fake:     true,
-      clue:     "a"
-    }
+]
 ]
 
 
