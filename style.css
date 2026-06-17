@@ -398,3 +398,14 @@ body {
   left: 0;
   color: var(--text);
 }
+.result-info {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+}
