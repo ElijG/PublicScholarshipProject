@@ -146,9 +146,9 @@ const ROUNDS = [
     {
       id:       "r3p3",
       username: "Uniersity of Michigan",
-      avatar:   "assets/climate3post3.jpg",
+      avatar:   "assets/climate3pfp3.jpg",
       location: "Ann Harbor, Michigan",
-      img:      "assets/climate3pfp3.jpg",
+      img:      "assets/climate3post3.jpg",
       likes:    1230,
       caption:  "Here is one of our recent studies showing climate change disbelief in red and blue cities/areas",
       time:     "4 months ago",
