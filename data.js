@@ -121,39 +121,39 @@ const ROUNDS = [
 [
     {
       id:       "r3p1",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
-      fake:     false,
-      clue:     "a"
+      username: "Elon Musk",
+      avatar:   "assets/climate3pfp1.jpg",
+      location: "Boca Chica, Texas",
+      img:      "assets/climate3post1.jpg",
+      likes:    120785,
+      caption:  "My recent post on X. Check it out.",
+      time:     "1 week ago",
+      fake:     true,
+      clue:     "Although Elon is a large public figure and his second two paragraps contain true information, according to many other public surveys, studies, and science, Earth's surface and farming does have a meaningful impact on climate change"
     },
     {
       id:       "r3p2",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
+      username: "Yale University",
+      avatar:   "assets/climate3pfp2.jpg",
+      location: "Yale",
+      img:      "assets/climate3post2.jpg",
+      likes:    5128,
+      caption:  "Here is a recent survey conducted by students and proffesor showing climate anxiety",
+      time:     "1 month ago",
       fake:     false,
-      clue:     "a"
+      clue:     "This post is correct it shows information from a study that was conducted by Yale University"
     },
     {
       id:       "r3p3",
-      username: "Example",
-      avatar:   "👍",
-      location: "Example",
-      img:      "👍",
-      likes:    892041,
-      caption:  "Exampple",
-      time:     "Example Time",
+      username: "Uniersity of Michigan",
+      avatar:   "assets/climate3post3.jpg",
+      location: "Ann Harbor, Michigan",
+      img:      "assets/climate3pfp3.jpg",
+      likes:    1230,
+      caption:  "Here is one of our recent studies showing climate change disbelief in red and blue cities/areas",
+      time:     "4 months ago",
       fake:     false,
-      clue:     "a"
+      clue:     "This is true information from a study conducted by the University of Michigan at Ann Harbor"
     }
 ]
 
