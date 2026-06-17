@@ -108,7 +108,7 @@ const ROUNDS = [
     {
       id:       "r2p4",
       username: "NASA.gov",
-      avatar:   "assets/climate2pfp4.j[g",
+      avatar:   "assets/climate2pfp4.jpg",
       location: "Canada",
       img:      "assets/climate2post4.jpg",
       likes:    4239,
