@@ -118,10 +118,10 @@ function showConclusion() {
   document.getElementById("result-screen").classList.add("hidden");
  
   const msgs = [
-    "Keep practicing — spotting fakes takes time!",
-    "Not bad — you caught some of them!",
-    "Good eye — you spotted most of them!",
-    "Perfect score — you are a fake spotting expert!"
+    "Unlucky",
+    "very close",
+    "Almost all found",
+    "Perfect score"
   ];
  
   document.getElementById("c-score").textContent   = score + " / " + ROUNDS.length;
