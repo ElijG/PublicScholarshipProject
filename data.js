@@ -115,7 +115,7 @@ const ROUNDS = [
       caption:  "A recent survey from one of our partner facilities in Canda shows that the Global Temparature is rising all over the world. Our data confirms the main driver is increased solar activity, not CO2 emissions which is clearly shown in the graph.",
       time:     "2 months ago",
       fake:     true,
-      clue:     "Good job the official NASA account on instagram is @nasa not NASA.gov. The caption also misinterprated the graph."
+      clue:     "the official NASA account on instagram is @nasa not NASA.gov. The caption also misinterprated the graph."
     }
 ],
 [
